@@ -1,0 +1,196 @@
+/* Style global */
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background-color: #fffbec;
+    color: #444;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+}
+
+/* Conteneur principal */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Style pour l'entête */
+header {
+    background: linear-gradient(45deg, #ff6f61, #ffcc00);
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3em;
+    font-weight: bold;
+    text-shadow: 2px 2px #ff9f43;
+}
+
+header p {
+    margin: 10px 0 0;
+    font-size: 1.3em;
+    color: #fdfd96;
+}
+
+/* Navigation */
+nav {
+    margin: 20px 0;
+    background: #ffd700;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #ff6f61;
+}
+
+/* Section principale */
+.main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px 0;
+}
+
+/* Carte de contenu */
+.card {
+    background: #fff8e7;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    text-align: center;
+}
+
+.card:hover {
+    transform: translateY(-5px) rotate(-2deg);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    width: 80%;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    margin: 0 0 10px;
+    font-size: 1.8em;
+    color: #ff6f61;
+    text-shadow: 1px 1px #ffd700;
+}
+
+.card p {
+    margin: 0;
+    color: #444;
+}
+
+/* Boutons ludiques */
+button {
+    background-color: #ffcc00;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+button:hover {
+    background-color: #ff6f61;
+    transform: scale(1.1);
+}
+
+/* Tableau stylisé */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background: #fff8e7;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+table, th, td {
+    border: 2px solid #ffcc00;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background: #ffd700;
+    color: white;
+    font-size: 1.3em;
+}
+
+td {
+    background: #fffbe6;
+    color: #333;
+}
+
+/* Pied de page */
+footer {
+    background: #ff6f61;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+/* Animations simples */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+header h1:hover {
+    animation: bounce 1s infinite;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+}
